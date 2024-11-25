@@ -1,4 +1,4 @@
-package seleniumTests.services;
+package selenideTests.services;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;

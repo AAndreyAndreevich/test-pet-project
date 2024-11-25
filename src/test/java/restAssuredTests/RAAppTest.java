@@ -1,6 +1,7 @@
 package restAssuredTests;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import restAssuredTests.pojo.RegisterUserPojo;
 import restAssuredTests.pojo.SuccessRegPojo;
@@ -11,7 +12,8 @@ import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
-public class AppTest {
+@Tag("RAssured")
+public class RAAppTest {
 
     private static final String URI = "https://reqres.in";
 

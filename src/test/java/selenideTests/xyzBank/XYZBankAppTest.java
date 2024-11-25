@@ -1,16 +1,18 @@
-package seleniumTests.xyzBank;
+package selenideTests.xyzBank;
 
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Description;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Alert;
-import seleniumTests.services.BaseTest;
-import seleniumTests.xyzBank.pages.BankManagerLoginPage;
-import seleniumTests.xyzBank.pages.CustomerLoginPage;
-import seleniumTests.xyzBank.pages.MainPage;
+import selenideTests.services.BaseTest;
+import selenideTests.xyzBank.pages.BankManagerLoginPage;
+import selenideTests.xyzBank.pages.CustomerLoginPage;
+import selenideTests.xyzBank.pages.MainPage;
 
-public class AppTest extends BaseTest {
+@Tag("Selenide")
+public class XYZBankAppTest extends BaseTest {
 
     @Description("делает проверку на то что баланс счетов не совпадает")
     @Test

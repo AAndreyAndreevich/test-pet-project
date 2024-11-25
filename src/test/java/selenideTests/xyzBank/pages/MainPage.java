@@ -1,4 +1,4 @@
-package seleniumTests.xyzBank.pages;
+package selenideTests.xyzBank.pages;
 
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;

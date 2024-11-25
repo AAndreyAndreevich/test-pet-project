@@ -6,6 +6,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Alert;
 import seleniumTests.services.BaseTest;
+import seleniumTests.xyzBank.pages.BankManagerLoginPage;
+import seleniumTests.xyzBank.pages.CustomerLoginPage;
+import seleniumTests.xyzBank.pages.MainPage;
 
 public class AppTest extends BaseTest {
 

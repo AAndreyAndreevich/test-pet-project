@@ -69,7 +69,7 @@ public class AppTest extends BaseTest {
     public void addCustomersTest() throws InterruptedException {
         MainPage mainPage = new MainPage();
         mainPage.bankManagerLogin();
-        BankManagerLoginPage.addCustomer("Ha", "Ba", "7KA");
+        BankManagerLoginPage.addCustomer("Yune", "Skoo", "25A");
         Alert alert = Selenide.switchTo().alert();
         Assertions.assertEquals("Customer added successfully with customer id :", alert.getText().substring(0, 46));
     }

@@ -30,6 +30,17 @@ dependencies {
     testImplementation 'io.qameta.allure:allure-java-commons:2.12.1'
 }
 
+def selenideTest = tasks.register("selenideTests", Test) {
+    useJUnitPlatform {
+        includeTags "Selenide"
+    }
+}
+def raTest = tasks.register("raTests", Test) {
+    useJUnitPlatform {
+        includeTags "RAssured"
+    }
+}
+
 test {
     useJUnitPlatform()
 }

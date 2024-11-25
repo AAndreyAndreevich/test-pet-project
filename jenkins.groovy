@@ -20,7 +20,7 @@ node {
         }
 
         try {
-            parallel getTestStages(["apiTests"])
+            parallel getTestStages(["selenideTests", "raTests"])
         } finally {
             stage ("Allure") {
                 generateAllure()
@@ -30,8 +30,11 @@ node {
 //        try {
 //            stage("Run tests") {
 //                parallel(
-//                        'Api Tests': {
-//                            runTestWithTag("apiTests")
+//                        'Selenide Tests': {
+//                            runTestWithTag("selenideTests")
+//                        },
+//                        'Rest Assured Tests': {
+//                            runTestWithTag("raTests")
 //                        }
 //                )
 //            }

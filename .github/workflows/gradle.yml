@@ -39,6 +39,12 @@ jobs:
       - name: Build App
         run: ./gradlew build
 
+      - name: Rest Assured Tests
+        run: ./gradlew -x test raTests
+
+      - name: Selenide Tests
+        run: ./gradlew -x test selenideTests
+
       - name: Create Allure Report
         run: ./gradlew allureReport
 

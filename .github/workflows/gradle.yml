@@ -36,8 +36,8 @@ jobs:
       - name: Change wrapper permissions
         run: chmod +x ./gradlew
 
-      - name: Run tests
-        run: ./gradlew test
+      - name: Build App
+        run: ./gradlew build
 
       - name: Create Allure Report
         run: ./gradlew allureReport
